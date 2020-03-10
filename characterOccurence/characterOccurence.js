@@ -10,3 +10,22 @@
 
  // input   =  aaaaaaaaaaaa
  // result  =  123456789101112
+
+ function occur (str) {
+    var count=0;
+    var str2=""
+    for (var i=0 ; i<str.length ; i++)  {
+       if (str[i]===str[i+1]) {
+           count++
+       }
+       if (str[i]!==str[i+1]) {
+           i++
+          //
+       }
+    }
+    for (var i=1 ; i<=count ; i++) {
+        str2= str2+ i
+    }
+    return str2
+}
+ 
