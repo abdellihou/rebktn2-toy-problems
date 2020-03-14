@@ -36,8 +36,8 @@ var calculate = function (n) {
 
 var nthFibonacci = function (n) {
   var arr=[]
-  var arrFixed=[0,1,1,2]
-  for (var i=3 ; i<n ; i++) {
+  var arrFixed=[0,1,1]
+  for (var i=2 ; i<n ; i++) {
     arr.push(calculate(n))
   }
   return arrFixed.concat(arr)
