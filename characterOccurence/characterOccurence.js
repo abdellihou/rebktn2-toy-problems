@@ -11,6 +11,7 @@
  // input   =  aaaaaaaaaaaa
  // result  =  123456789101112
 
+<<<<<<< HEAD
  function occur (str) {
     var count=0;
     var str2=""
@@ -28,4 +29,8 @@
     }
     return str2
 }
+=======
+
+
+>>>>>>> 8b2322f64f8f3bd6a03885315c81ee9cadbe4dac
  
