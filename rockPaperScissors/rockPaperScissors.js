@@ -18,7 +18,15 @@
 *
 */
 
-var rockPaperScissors = function (
-) {
-  // TODO: your solution here
+var rockPaperScissors = function () {
+var str="RPS";
+var output=[];
+for (var i=0 ; i<str.length ; i++ ) {
+    for (var j=0 ; j<str.length; j++) {
+        for (var k=0 ; k<str.length ; k++){
+            output.push(str[i]+str[j]+str[k])
+        }
+    }
+}
+return output;
 };
