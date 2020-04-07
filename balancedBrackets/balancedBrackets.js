@@ -9,4 +9,32 @@ isBalanced("(50)(") // false
 isBalanced("[{]}") // false
 */
 
-var isBalanced = function(str) {};
+var isBalanced = function(str) {
+
+    var countOpenedBracket=0
+    var countClosedBracket=0
+    //iterating through the string and couning  open brackets and closed brackets
+for (var i=0 ; i< str.length ; i++) {
+    if (str[i]==="("  || str[i]==="{"   ||  str[i]==="[") {
+        countOpenedBracket++
+    }
+
+    if (str[i]===")"  || str[i]==="}"   ||  str[i]==="]") {
+        countClosedBracket++
+    }
+}
+
+
+// edge case missing   [{]}
+
+
+
+
+// to be balanced the open brackets must be equal to close brackets
+if (countOpenedBracket===countClosedBracket ) { 
+    return true
+}
+else return false
+
+
+};
