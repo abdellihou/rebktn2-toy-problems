@@ -14,4 +14,18 @@ longestRun("abccccccc") // [ 2, 8 ]
 
 
 
-
+//i dont know
+function longestRun(str) {
+    if (str==="") {
+        return "[0,0]"
+    }
+    var countOccurence=0
+    var word=""
+    for (var i=0 ; i=str.length ; i=i+2 ){
+        if (str[i]===str[i+1]) {
+            countOccurence++
+            word=str[i]
+        }
+    }
+    return word
+}
