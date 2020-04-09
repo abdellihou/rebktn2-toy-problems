@@ -71,5 +71,21 @@ Array.prototype.sort = function() {
 };
 
 function mergeSort(arr) {
-  // your code here...
+  var initialStep= []
+  for (var i=0 ; i<arr.length ; i++) {
+    initialStep.push(arr.slice(i,i+1))
+  }
+
+  for (var i=0 ; i<initialStep.lengh ; i++) {
+    var comparison = -infinity ;
+    if (initialStep[i] > initialStep[i+1]) {
+    comparison=initialStep[i]
+    initialStep[i+1]=initialStep[i]
+    initialStep[i]=comparison
+    }
+  }
+
+
+  //not finished
+
 }
